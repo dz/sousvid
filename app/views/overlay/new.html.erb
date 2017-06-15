@@ -3,3 +3,14 @@
     <h1 class="title">New <%= @overlay.verbose_name %></h1>
   </div>
 </section>
+
+<section class="section">
+  <div class="container">
+    <div id="json_editor">
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  SOUSVID.Editor.create('#json_editor', <%= raw @overlay.json_schema %>)
+</script>
