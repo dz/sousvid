@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20170615205217) do
 
   create_table "overlays", force: :cascade do |t|
     t.string "title"
-    t.string "type"
+    t.string "overlay_type"
     t.text "data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
