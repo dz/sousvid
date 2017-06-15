@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title">Active Overlays</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <%  20.times.each do %>
+        <div class="column is-4">
+          <%= render :partial => "card" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

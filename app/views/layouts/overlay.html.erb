@@ -1,0 +1,18 @@
+<% content_for :nav do %>
+  <nav class="nav">
+    <div class="nav-left">
+      <h3 class="nav-item"><a href="/"><b>😅 SousVid</b></a><span class="is-hidden-mobile">&nbsp;&nbsp;<i>Stream Assistant</i></span></h3>
+    </div>
+    <div class="nav-right">
+      <div class="nav-item">
+        <p class="control">
+          <a href="/overlays/new" class="button is-primary">New Overlay</a>
+        </p>
+      </div>
+      <a href="/overlays" class="nav-item is-tab <%= "is-active" if @active_nav =="active" %>">Active</a>
+      <a href="/overlays/all" class="nav-item is-tab <%= "is-active" if @active_nav == "all" %>">All</a>
+    </div>
+  </nav>
+<% end %>
+
+<%= render :template => "layouts/application" %>
